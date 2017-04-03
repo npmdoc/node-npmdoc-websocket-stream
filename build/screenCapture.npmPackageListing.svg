@@ -1,0 +1,18 @@
+<svg height="238" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="238" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">  0.  2017-04-03 16:49:33 +0000    19852 byte  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-03 16:49:33 +0000     1279 byte  LICENSE</tspan>
+<tspan x="10" y="58">  2.  2017-04-03 16:49:33 +0000      778 byte  collaborators.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-03 16:49:33 +0000      875 byte  echo-server.js</tspan>
+<tspan x="10" y="90">  4.  2017-04-03 16:49:33 +0000      146 byte  index.js</tspan>
+<tspan x="10" y="106">  5.  2017-04-03 16:49:33 +0000     3103 byte  package.json</tspan>
+<tspan x="10" y="122">  6.  2017-04-03 16:49:33 +0000     2389 byte  readme.md</tspan>
+<tspan x="10" y="138">  7.  2017-04-03 16:49:33 +0000      596 byte  server.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-03 16:49:33 +0000     2991 byte  stream.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-03 16:49:33 +0000     1584 byte  test-client.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-03 16:49:33 +0000      948 byte  test-server.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-03 16:49:33 +0000     4941 byte  test.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-03 16:49:33 +0000      222 byte  ws-fallback.js</tspan>
+</text>
+</svg>

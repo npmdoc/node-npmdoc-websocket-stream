@@ -1,0 +1,728 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/maxogden/websocket-stream#readme"
+
+    >websocket-stream (v3.3.3)</a>
+</h1>
+<h4>Use websockets with the node streams API. Works in browser and node</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.websocket-stream">module websocket-stream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.Server">
+            function <span class="apidocSignatureSpan">websocket-stream.</span>Server
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.Server.super_">
+            function <span class="apidocSignatureSpan">websocket-stream.</span>Server.super_
+            <span class="apidocSignatureSpan">(options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.createServer">
+            function <span class="apidocSignatureSpan">websocket-stream.</span>createServer
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">websocket-stream.</span>Server.super_.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">websocket-stream.</span>echo_server</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.websocket-stream.Server">module websocket-stream.Server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.Server.Server">
+            function <span class="apidocSignatureSpan">websocket-stream.</span>Server
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.Server.super_">
+            function <span class="apidocSignatureSpan">websocket-stream.Server.</span>super_
+            <span class="apidocSignatureSpan">(options, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.websocket-stream.Server.super_">module websocket-stream.Server.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.Server.super_.super_">
+            function <span class="apidocSignatureSpan">websocket-stream.Server.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.websocket-stream.Server.super_.prototype">module websocket-stream.Server.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.Server.super_.prototype.close">
+            function <span class="apidocSignatureSpan">websocket-stream.Server.super_.prototype.</span>close
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.Server.super_.prototype.handleUpgrade">
+            function <span class="apidocSignatureSpan">websocket-stream.Server.super_.prototype.</span>handleUpgrade
+            <span class="apidocSignatureSpan">(req, socket, upgradeHead, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.websocket-stream.echo_server">module websocket-stream.echo_server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.echo_server.start">
+            function <span class="apidocSignatureSpan">websocket-stream.echo_server.</span>start
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.websocket-stream.echo_server.stop">
+            function <span class="apidocSignatureSpan">websocket-stream.echo_server.</span>stop
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">websocket-stream.echo_server.</span>port</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">websocket-stream.echo_server.</span>url</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.websocket-stream" id="apidoc.module.websocket-stream">module websocket-stream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.Server" id="apidoc.element.websocket-stream.Server">
+        function <span class="apidocSignatureSpan">websocket-stream.</span>Server
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Server(opts, cb) {
+  if (!(this instanceof Server)) {
+    return new Server(opts, cb)
+  }
+
+  WebSocketServer.call(this, opts)
+
+  var proxied = false
+  this.on(&#x27;newListener&#x27;, function(event) {
+    if (!proxied &#x26;&#x26; event === &#x27;stream&#x27;) {
+      proxied = true
+      this.on(&#x27;connection&#x27;, function(conn) {
+        this.emit(&#x27;stream&#x27;, stream(conn, opts))
+      })
+    }
+  })
+
+  if (cb) {
+    this.on(&#x27;stream&#x27;, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.Server.super_" id="apidoc.element.websocket-stream.Server.super_">
+        function <span class="apidocSignatureSpan">websocket-stream.</span>Server.super_
+        <span class="apidocSignatureSpan">(options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WebSocketServer(options, callback) {
+  if (this instanceof WebSocketServer === false) {
+    return new WebSocketServer(options, callback);
+  }
+
+  events.EventEmitter.call(this);
+
+  options = new Options({
+    host: &#x27;0.0.0.0&#x27;,
+    port: null,
+    server: null,
+    verifyClient: null,
+    handleProtocols: null,
+    path: null,
+    noServer: false,
+    disableHixie: false,
+    clientTracking: true,
+    perMessageDeflate: true,
+    maxPayload: 100 * 1024 * 1024
+  }).merge(options);
+
+  if (!options.isDefinedAndNonNull(&#x27;port&#x27;) &#x26;&#x26; !options.isDefinedAndNonNull(&#x27;server&#x27;) &#x26;&#x26; !options.value.noServer) {
+    throw new TypeError(&#x27;`port` or a `server` must be provided&#x27;);
+  }
+
+  var self = this;
+
+  if (options.isDefinedAndNonNull(&#x27;port&#x27;)) {
+    this._server = http.createServer(function (req, res) {
+      var body = http.STATUS_CODES[426];
+      res.writeHead(426, {
+        &#x27;Content-Length&#x27;: body.length,
+        &#x27;Content-Type&#x27;: &#x27;text/plain&#x27;
+      });
+      res.end(body);
+    });
+    this._server.allowHalfOpen = false;
+    this._server.listen(options.value.port, options.value.host, callback);
+    this._closeServer = function() { if (self._server) self._server.close(); };
+  }
+  else if (options.value.server) {
+    this._server = options.value.server;
+    if (options.value.path) {
+      // take note of the path, to avoid collisions when multiple websocket servers are
+      // listening on the same http server
+      if (this._server._webSocketPaths &#x26;&#x26; options.value.server._webSocketPaths[options.value.path]) {
+        throw new Error(&#x27;two instances of WebSocketServer cannot listen on the same http server path&#x27;);
+      }
+      if (typeof this._server._webSocketPaths !== &#x27;object&#x27;) {
+        this._server._webSocketPaths = {};
+      }
+      this._server._webSocketPaths[options.value.path] = 1;
+    }
+  }
+  if (this._server) {
+    this._onceServerListening = function() { self.emit(&#x27;listening&#x27;); };
+    this._server.once(&#x27;listening&#x27;, this._onceServerListening);
+  }
+
+  if (typeof this._server != &#x27;undefined&#x27;) {
+    this._onServerError = function(error) { self.emit(&#x27;error&#x27;, error) };
+    this._server.on(&#x27;error&#x27;, this._onServerError);
+    this._onServerUpgrade = function(req, socket, upgradeHead) {
+      //copy upgradeHead to avoid retention of large slab buffers used in node core
+      var head = new Buffer(upgradeHead.length);
+      upgradeHead.copy(head);
+
+      self.handleUpgrade(req, socket, head, function(client) {
+        self.emit(&#x27;connection&#x27;+req.url, client);
+        self.emit(&#x27;connection&#x27;, client);
+      });
+    };
+    this._server.on(&#x27;upgrade&#x27;, this._onServerUpgrade);
+  }
+
+  this.options = options.value;
+  this.path = options.value.path;
+  this.clients = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.createServer" id="apidoc.element.websocket-stream.createServer">
+        function <span class="apidocSignatureSpan">websocket-stream.</span>createServer
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Server(opts, cb) {
+  if (!(this instanceof Server)) {
+    return new Server(opts, cb)
+  }
+
+  WebSocketServer.call(this, opts)
+
+  var proxied = false
+  this.on(&#x27;newListener&#x27;, function(event) {
+    if (!proxied &#x26;&#x26; event === &#x27;stream&#x27;) {
+      proxied = true
+      this.on(&#x27;connection&#x27;, function(conn) {
+        this.emit(&#x27;stream&#x27;, stream(conn, opts))
+      })
+    }
+  })
+
+  if (cb) {
+    this.on(&#x27;stream&#x27;, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### On the server
+
+Using the [`ws`](http://npmjs.org/ws) module you can make a websocket server and use this module to get websocket streams on the
+ server:
+
+```javascript
+var websocket = require(&#x27;websocket-stream&#x27;)
+var wss = websocket.<span class="apidocCodeKeywordSpan">createServer</span>({server: someHTTPServer}, handle)
+
+function handle(stream) {
+  fs.createReadStream(&#x27;bigdata.json&#x27;).pipe(stream)
+}
+```
+
+## Run the tests
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.websocket-stream.Server" id="apidoc.module.websocket-stream.Server">module websocket-stream.Server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.Server.Server" id="apidoc.element.websocket-stream.Server.Server">
+        function <span class="apidocSignatureSpan">websocket-stream.</span>Server
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Server(opts, cb) {
+  if (!(this instanceof Server)) {
+    return new Server(opts, cb)
+  }
+
+  WebSocketServer.call(this, opts)
+
+  var proxied = false
+  this.on(&#x27;newListener&#x27;, function(event) {
+    if (!proxied &#x26;&#x26; event === &#x27;stream&#x27;) {
+      proxied = true
+      this.on(&#x27;connection&#x27;, function(conn) {
+        this.emit(&#x27;stream&#x27;, stream(conn, opts))
+      })
+    }
+  })
+
+  if (cb) {
+    this.on(&#x27;stream&#x27;, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.Server.super_" id="apidoc.element.websocket-stream.Server.super_">
+        function <span class="apidocSignatureSpan">websocket-stream.Server.</span>super_
+        <span class="apidocSignatureSpan">(options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WebSocketServer(options, callback) {
+  if (this instanceof WebSocketServer === false) {
+    return new WebSocketServer(options, callback);
+  }
+
+  events.EventEmitter.call(this);
+
+  options = new Options({
+    host: &#x27;0.0.0.0&#x27;,
+    port: null,
+    server: null,
+    verifyClient: null,
+    handleProtocols: null,
+    path: null,
+    noServer: false,
+    disableHixie: false,
+    clientTracking: true,
+    perMessageDeflate: true,
+    maxPayload: 100 * 1024 * 1024
+  }).merge(options);
+
+  if (!options.isDefinedAndNonNull(&#x27;port&#x27;) &#x26;&#x26; !options.isDefinedAndNonNull(&#x27;server&#x27;) &#x26;&#x26; !options.value.noServer) {
+    throw new TypeError(&#x27;`port` or a `server` must be provided&#x27;);
+  }
+
+  var self = this;
+
+  if (options.isDefinedAndNonNull(&#x27;port&#x27;)) {
+    this._server = http.createServer(function (req, res) {
+      var body = http.STATUS_CODES[426];
+      res.writeHead(426, {
+        &#x27;Content-Length&#x27;: body.length,
+        &#x27;Content-Type&#x27;: &#x27;text/plain&#x27;
+      });
+      res.end(body);
+    });
+    this._server.allowHalfOpen = false;
+    this._server.listen(options.value.port, options.value.host, callback);
+    this._closeServer = function() { if (self._server) self._server.close(); };
+  }
+  else if (options.value.server) {
+    this._server = options.value.server;
+    if (options.value.path) {
+      // take note of the path, to avoid collisions when multiple websocket servers are
+      // listening on the same http server
+      if (this._server._webSocketPaths &#x26;&#x26; options.value.server._webSocketPaths[options.value.path]) {
+        throw new Error(&#x27;two instances of WebSocketServer cannot listen on the same http server path&#x27;);
+      }
+      if (typeof this._server._webSocketPaths !== &#x27;object&#x27;) {
+        this._server._webSocketPaths = {};
+      }
+      this._server._webSocketPaths[options.value.path] = 1;
+    }
+  }
+  if (this._server) {
+    this._onceServerListening = function() { self.emit(&#x27;listening&#x27;); };
+    this._server.once(&#x27;listening&#x27;, this._onceServerListening);
+  }
+
+  if (typeof this._server != &#x27;undefined&#x27;) {
+    this._onServerError = function(error) { self.emit(&#x27;error&#x27;, error) };
+    this._server.on(&#x27;error&#x27;, this._onServerError);
+    this._onServerUpgrade = function(req, socket, upgradeHead) {
+      //copy upgradeHead to avoid retention of large slab buffers used in node core
+      var head = new Buffer(upgradeHead.length);
+      upgradeHead.copy(head);
+
+      self.handleUpgrade(req, socket, head, function(client) {
+        self.emit(&#x27;connection&#x27;+req.url, client);
+        self.emit(&#x27;connection&#x27;, client);
+      });
+    };
+    this._server.on(&#x27;upgrade&#x27;, this._onServerUpgrade);
+  }
+
+  this.options = options.value;
+  this.path = options.value.path;
+  this.clients = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.websocket-stream.Server.super_" id="apidoc.module.websocket-stream.Server.super_">module websocket-stream.Server.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.Server.super_.super_" id="apidoc.element.websocket-stream.Server.super_.super_">
+        function <span class="apidocSignatureSpan">websocket-stream.Server.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.websocket-stream.Server.super_.prototype" id="apidoc.module.websocket-stream.Server.super_.prototype">module websocket-stream.Server.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.Server.super_.prototype.close" id="apidoc.element.websocket-stream.Server.super_.prototype.close">
+        function <span class="apidocSignatureSpan">websocket-stream.Server.super_.prototype.</span>close
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">close = function (callback) {
+  // terminate all associated clients
+  var error = null;
+  try {
+    for (var i = 0, l = this.clients.length; i &#x3c; l; ++i) {
+      this.clients[i].terminate();
+    }
+  }
+  catch (e) {
+    error = e;
+  }
+
+  // remove path descriptor, if any
+  if (this.path &#x26;&#x26; this._server._webSocketPaths) {
+    delete this._server._webSocketPaths[this.path];
+    if (Object.keys(this._server._webSocketPaths).length == 0) {
+      delete this._server._webSocketPaths;
+    }
+  }
+
+  // close the http server if it was internally created
+  try {
+    if (typeof this._closeServer !== &#x27;undefined&#x27;) {
+      this._closeServer();
+    }
+  }
+  finally {
+    if (this._server) {
+      this._server.removeListener(&#x27;listening&#x27;, this._onceServerListening);
+      this._server.removeListener(&#x27;error&#x27;, this._onServerError);
+      this._server.removeListener(&#x27;upgrade&#x27;, this._onServerUpgrade);
+    }
+    delete this._server;
+  }
+  if(callback)
+    callback(error);
+  else if(error)
+    throw error;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+test(&#x27;with bare WebSocket, strings as strings&#x27;, function (t) {
+var socket = new WebSocket(&#x27;ws://localhost:8344&#x27;)
+
+socket.onmessage = function (e) {
+  var data = e.data
+  t.ok(typeof data === &#x27;string&#x27;, &#x27;data must be a string&#x27;)
+  socket.<span class="apidocCodeKeywordSpan">close</span>()
+  t.end()
+}
+})
+
+test(&#x27;with bare WebSocket, binary only&#x27;, function (t) {
+var socket = new WebSocket(&#x27;ws://localhost:8345&#x27;)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.Server.super_.prototype.handleUpgrade" id="apidoc.element.websocket-stream.Server.super_.prototype.handleUpgrade">
+        function <span class="apidocSignatureSpan">websocket-stream.Server.super_.prototype.</span>handleUpgrade
+        <span class="apidocSignatureSpan">(req, socket, upgradeHead, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">handleUpgrade = function (req, socket, upgradeHead, cb) {
+  // check for wrong path
+  if (this.options.path) {
+    var u = url.parse(req.url);
+    if (u &#x26;&#x26; u.pathname !== this.options.path) return;
+  }
+
+  if (typeof req.headers.upgrade === &#x27;undefined&#x27; || req.headers.upgrade.toLowerCase() !== &#x27;websocket&#x27;) {
+    abortConnection(socket, 400, &#x27;Bad Request&#x27;);
+    return;
+  }
+
+  if (req.headers[&#x27;sec-websocket-key1&#x27;]) handleHixieUpgrade.apply(this, arguments);
+  else handleHybiUpgrade.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.websocket-stream.echo_server" id="apidoc.module.websocket-stream.echo_server">module websocket-stream.echo_server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.echo_server.start" id="apidoc.element.websocket-stream.echo_server.start">
+        function <span class="apidocSignatureSpan">websocket-stream.echo_server.</span>start
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (opts, cb) {
+  if (server) {
+    cb(new Error(&#x27;already started&#x27;));
+    return;
+  }
+
+  if (typeof opts == &#x27;function&#x27;) {
+    cb = opts;
+    opts = {};
+  }
+
+  server = http.createServer()
+  opts.server = server
+
+  websocket.createServer(opts, echo)
+
+  server.listen(port, cb)
+
+  function echo(stream) {
+    stream.pipe(stream)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+var http = require(&#x27;http&#x27;)
+var websocket = require(&#x27;./&#x27;)
+var echo = require(&#x27;./echo-server.js&#x27;)
+var WebSocketServer = require(&#x27;ws&#x27;).Server
+
+echo.<span class="apidocCodeKeywordSpan">start</span>(function(){
+console.log(&#x27;echo server is running&#x27;)
+})
+
+function forBare (opts) {
+var server = http.createServer()
+
+websocket.createServer({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.websocket-stream.echo_server.stop" id="apidoc.element.websocket-stream.echo_server.stop">
+        function <span class="apidocSignatureSpan">websocket-stream.echo_server.</span>stop
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stop = function (cb) {
+  if (!server) {
+    cb(new Error(&#x27;not started&#x27;))
+    return
+  }
+
+  server.close(cb)
+  server = null
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  client.on(&#x27;error&#x27;, console.error)
+
+  client.on(&#x27;data&#x27;, function(data) {
+    t.ok(Buffer.isBuffer(data), &#x27;is a buffer&#x27;)
+    t.equal(data.toString(), &#x27;hello world&#x27;)
+    client.end()
+    echo.<span class="apidocCodeKeywordSpan">stop</span>(function() {
+      t.end()
+    })
+  })
+
+  client.write(&#x27;hello world&#x27;)
+})
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
