@@ -1,1 +1,39 @@
-{     "devDependencies": {         "websocket-stream": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-websocket-stream",     "homepage": "https://github.com/npmdoc/node-npmdoc-websocket-stream",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-websocket-stream.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [websocket-stream (v4.0.0)](https://github.com/maxogden/websocket-stream#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-websocket-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-websocket-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-websocket-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-websocket-stream)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "websocket-stream": "*"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-websocket-stream",
+    "keywords": [
+        "documentation",
+        "websocket-stream"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_websocket_stream.js",
+    "name": "npmdoc-websocket-stream",
+    "nameAlias": "npmdoc_websocket_stream",
+    "nameOriginal": "npmdoc-websocket-stream",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-websocket-stream.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.2"
+}
