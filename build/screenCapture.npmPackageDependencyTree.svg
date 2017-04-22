@@ -19,7 +19,7 @@
 <tspan x="10" y="266">  │ ├── string_decoder@1.0.0 </tspan>
 <tspan x="10" y="282">  │ └── util-deprecate@1.0.2 </tspan>
 <tspan x="10" y="298">  ├── safe-buffer@5.0.1 </tspan>
-<tspan x="10" y="314">  ├─┬ ws@2.2.3 </tspan>
+<tspan x="10" y="314">  ├─┬ ws@2.3.1 </tspan>
 <tspan x="10" y="330">  │ └── ultron@1.1.0 </tspan>
 <tspan x="10" y="346">  └── xtend@4.0.1</tspan>
 </text>
